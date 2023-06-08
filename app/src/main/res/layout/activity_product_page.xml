@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Product_page">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/productcardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.004"
+        tools:layout_editor_absoluteX="0dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <FrameLayout
+                android:id="@+id/productframeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <View
+                android:id="@+id/view"
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:layout_below="@+id/marketdata"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gold"
+
+                />
+
+            <TextView
+                android:id="@+id/marketdata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/productframeLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="Pharmacy"
+                android:textColor="@color/red"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/marketimage"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_below="@+id/view"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:src="@color/purple_700" />
+
+            <TextView
+                android:id="@+id/marketname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view"
+                android:layout_marginLeft="225dp"
+                android:layout_marginTop="45dp"
+                android:text="market name"
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/marketpage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/marketname"
+                android:layout_marginLeft="225dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/black"
+                android:text="market page" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>

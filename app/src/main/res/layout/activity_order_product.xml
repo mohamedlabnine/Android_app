@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Order_Product">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/productimage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="14dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/productname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/productimage"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:hint="productname"
+            android:text="productname"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/productprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/productname"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:hint="productprice"
+            android:text="productprice"
+            android:textColor="@color/red"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+        <View
+            android:id="@+id/view"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:layout_below="@+id/productprice"
+            android:layout_marginBottom="10dp"
+            android:background="@color/red"
+
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/cardnumbercontainer"
+            style="@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="30dp"
+            app:boxBackgroundColor="#FFFFFF"
+            app:boxBackgroundMode="outline"
+            app:counterEnabled="true"
+            app:counterMaxLength="16"
+            app:errorEnabled="true"
+            app:helperText="required"
+            app:helperTextTextColor="@color/red"
+
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cardnumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Card Number"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="16"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardnumbercontainer"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/red"
+            android:hint="order"
+            android:text="Order" />
+    </RelativeLayout>
+
+
+</ScrollView>

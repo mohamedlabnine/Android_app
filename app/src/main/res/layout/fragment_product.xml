@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductFragment">
+
+    <ImageView
+        android:id="@+id/productimage"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginTop="14dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/productname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productimage"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:hint="productname"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:text="productname"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/productprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productname"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:hint="productprice"
+        android:text="productprice"
+        android:textColor="@color/red"
+        android:textSize="31sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productprice"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:hint="=description"
+        android:text="description"
+        android:textColor="@color/colorPrimary"
+        android:textSize="31sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/productdescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/description"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="productdescription"
+        android:text="prductdescription"
+        android:textColor="#6b6464"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/usecase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productdescription"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:hint="=use case"
+        android:text="use case"
+        android:textColor="@color/colorPrimary"
+        android:textSize="31sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/productusecase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usecase"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="productusecase"
+        android:text="prductusecase"
+        android:textColor="#6b6464"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/component"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productusecase"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:hint="component"
+        android:text="component"
+        android:textColor="@color/colorPrimary"
+        android:textSize="31sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/productcomponent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/component"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:hint="productcomponent"
+        android:text="prductcompenent"
+        android:textColor="#6b6464"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/caution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productcomponent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:drawableRight="@drawable/ic_caution"
+        android:hint="caution"
+        android:text="caution"
+        android:textColor="@color/red"
+        android:textSize="31sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/productcaution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/caution"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:hint="productcomponent"
+        android:text="prductcompenent"
+
+        android:textColor="#6b6464"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+
+
+    <RatingBar
+        android:id="@+id/ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productcaution"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:numStars="5"
+        android:progressTint="@color/gold"
+        android:stepSize="0.5" />
+
+    <Button
+        android:id="@+id/rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:text="Rate"
+        android:textSize="20dp" />
+
+
+    <Button
+        android:id="@+id/buy"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/productname"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="-9dp"
+        android:backgroundTint="@color/red"
+        android:text="Buy Now"
+        android:textSize="20sp" />
+
+</RelativeLayout>

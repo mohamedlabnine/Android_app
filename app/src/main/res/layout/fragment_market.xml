@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MarketFragment">
+
+
+    <ImageView
+        android:id="@+id/marketimage"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginTop="14dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/marketname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/marketimage"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:hint="marketname"
+        android:text="marketname"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="marketdescription"
+        android:id="@+id/marketdescription"
+        android:textSize="18sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:textStyle="bold"
+        android:text="marketdescription"
+        android:textColor="#6b6464"
+        android:layout_below="@+id/marketname"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/gotomap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/marketdescription"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/black"
+        android:drawableRight="@drawable/ic_location"
+        android:text="Location" />
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gotomap"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="distance"
+        android:text="distance"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
